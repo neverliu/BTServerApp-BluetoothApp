@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppTheme_NoActionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:configChanges">orientation|keyboard</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:configChanges">orientation|keyboard</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="ToolBar_Theme_White">
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textStyle"></style>
+
+    <!-- small style text black,title  -->
+    <style name="textStyle.small.black" parent="textStyle.small">
+        <item name="android:textColor">@color/colorlightGrayM</item>
+    </style>
+
+    <!-- big style text black,title  -->
+    <style name="textStyle.Big.black" parent="textStyle.Big">
+        <item name="android:textColor">@color/colorlightGrayM</item>
+    </style>
+
+    <style name="textStyle.Big">
+        <item name="android:textSize">@dimen/textView_big</item>
+    </style>
+
+    <style name="textStyle.small">
+        <item name="android:textSize">@dimen/textView_small</item>
+    </style>
+
+    <!-- Medium style text gray,title  -->
+    <style name="textStyle.Medium.gray" parent="textStyle.Medium">
+        <item name="android:textColor">@color/colorlightGrayL</item>
+    </style>
+
+    <!-- Medium style text white,title  -->
+    <style name="textStyle.Medium.white" parent="textStyle.MediumSmall">
+        <item name="android:textColor">@android:color/background_light</item>
+    </style>
+
+    <!-- Medium style text lightgray,info  -->
+    <style name="textStyle.Medium.lightgray" parent="textStyle.MediumSmall">
+        <item name="android:textColor">@color/colorlightGrayL</item>
+    </style>
+
+    <style name="textStyle.Medium">
+        <item name="android:textSize">@dimen/textView_medium</item>
+    </style>
+    <style name="textStyle.MediumSmall">
+        <item name="android:textSize">@dimen/textView_mediumSmall</item>
+    </style>
+
+    <style name="SwitchCompat.Control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorCornflowerBlue</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/white</item>
+    </style>
+
+    <style name="SwitchCompat.Text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+    
+    <style name="search_devices_textStyle">
+        <item name="android:paddingTop">@dimen/textView_paddingtop</item>
+        <item name="android:paddingBottom">@dimen/textView_paddingtop</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="main_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/main_button_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="main_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="main_text_style_new">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">-10dp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/main_button_bg</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingTop">30dp</item>
+    </style>
+</resources>

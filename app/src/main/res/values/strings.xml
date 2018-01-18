@@ -1,0 +1,147 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">H0009 AP</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+    <string name="main_noconnect">No connect</string>
+    <string name="main_connecting">Connecting</string>
+    <string name="main_connected">Connected</string>
+    <string name="main_connected_to">"Connected to\n"</string>
+    <string name="matched">matched</string>
+    <string name="no_matched">No matched</string>
+    <string name="connected">connected</string>
+    <string name="data">Data</string>
+    <string name="data_open">Data on</string>
+    <string name="data_close">Data off</string>
+    <string name="data_no_sim">No SIM</string>
+    <string name="contacts">Contacts</string>
+    <string name="sms">SMS</string>
+    <string name="ring">Ringtone</string>
+    <string name="login_alexa">Login Alexa</string>
+    <string name="main_ring_success">"Set Ringtone success"</string>
+    <string name="main_ring_fail">"Set Ringtone fail"</string>
+    <string name="main_no_connect_device">"Doesn't connect to device"</string>
+    <string name="wifi_ap">Hotspot</string>
+    <string name="wifi_ap_open_title">"Do you turn WIFI hotspot on?"</string>
+    <string name="wifi_ap_close_title">"Do you turn WIFI hotspot off?"</string>
+    <string name="main_menu_create">New connect</string>
+    <string name="main_menu_turn_off">Turn off BT</string>
+    <string name="main_wifi_ap_open_msg">"Turn WiFi Hotspot on success."</string>
+    <string name="main_wifi_ap_close_msg">"Turn WiFi Hotspot off success."</string>
+    <string name="main_wifi_ap_fail_msg">"Turn WiFi Hotspot on fail."</string>
+
+    <string name="bt_device_list">"Device list"</string>
+
+    <string name="wifi_device_list">"Wifi configuration"</string>
+    <string name="wifi_ap_device_list">"Wifi AP configuration"</string>
+
+    <string name="click_get_wifi_list">Click get WIFI list</string>
+    <string name="title_password">Password:</string>
+    <string name="input_wifi_password">Input WIFI password</string>
+    <string name="button_configuration">Configuration</string>
+    <string name="close_wifi">Close WiFi</string>
+    <string name="wifi">WIFI:</string>
+    <string name="get_wifi_status">Server WIFI</string>
+    <string name="please_connect_device">Please use bluetooth connected to device</string>
+
+    <string name="fotget_device">Forget this device</string>
+    <string name="searching_devices">Searching devices ...</string>
+    <string name="search_devices">Search devices</string>
+    <string name="not_find_devices">not find decices</string>
+    <string name="unkown_device">Unkown Device</string>
+    <string name="bond_fail">Bond fail</string>
+    <string name="foget_device_fail">Foget fail</string>
+    <string name="request_bond_device">Request pair with %s</string>
+    <string name="cancel_bond_device">Cancel pair with %s</string>
+    <string name="success_bond_device">Successful pairing with %s</string>
+    <string name="available_devices">Available devices</string>
+    <string name="paired_devices">Paired devices</string>
+    <string name="get_contacts">Get contacts</string>
+    <string name="add_contact">Add contact</string>
+    <string name="title_activity_mms">MmsActivity</string>
+    <string name="sms_send">Send</string>
+
+    <string name="just_now">just now</string>
+    <string name="minutes_ago">Minutes ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="yesterday">Yesterday</string>
+
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="sim_network_type_2g">2G</string>
+    <string name="sim_network_type_3g">3G</string>
+    <string name="sim_network_type_4g">4G</string>
+    <string name="sim_card_info_text">Sim Card Info</string>
+    <string name="sim_card_no_sim">No SIM</string>
+    
+    <string name="battery_charging">"Charging %d%%"</string>
+    <string name="battery_current">"%d%%"</string>
+    <string name="battery">Battery</string>
+    <string name="exit_toast">Please press the return button again to exit</string>
+    <string name="dialog_add_contact">Add contact</string>
+    <string name="input_name">input name</string>
+    <string name="text_name">Name:</string>
+    <string name="text_number">Number:</string>
+    <string name="input_number">input number</string>
+    <string name="menu_modify">Modify</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_dialer">Make call</string>
+    <string name="menu_title">Menu</string>
+    <string name="modify_contact">Modify contact</string>
+    <string name="delete_contact">Delete %s ?</string>
+    <string name="toast_add_ok">added successful</string>
+    <string name="toast_add_fiald">add failed</string>
+    <string name="toast_modify_ok">modified successful</string>
+    <string name="toast_modify_fiald">modify failed</string>
+    <string name="toast_delete_ok">delete successful</string>
+    <string name="toast_delete_fiald">delete failed</string>
+    <string name="toast_notify_name_phone">Please enter a valid name and phone number!</string>
+    <string name="welcome">Welcome to the Alexa Voice Service Companion App!</string>
+    <string name="connect">Connect</string>
+
+    <string name="address_title">Device Address</string>
+    <string name="address_hint">Eg: https://10.0.2.2:8443</string>
+
+    <string name="error">Error</string>
+    <string name="success_message">Your device is now successfully provisioned and ready to use.</string>
+
+    <string name="login_button_description">Login with Amazon</string>
+    <string name="saved_device_address" translatable="false">saved_device_address</string>
+    <string name="alexa">Alexa</string>
+    <string name="text_wifi_1">The server WiFi is on, please later...</string>
+    <string name="text_wifi_2">The server WiFi is closing...</string>
+    <string name="text_wifi_3">The server WiFi has been closed, please open it and connect it to the same WiFi with the phone.</string>
+    <string name="text_wifi_4">The server WiFi has been opened. Please open the cell phone WiFi and connect it to the same WiFi.</string>
+    <string name="text_wifi_5">WiFi opens and is under the same WiFi with the phone, please try to connect to Alexa.</string>
+    <string name="text_wifi_6">WiFi address mismatch, please connect to the same WiFi.</string>
+    <string name="text_wifi_7">Please check whether the Bluetooth connection is connected</string>
+
+    <string name="login_message_1" >You are successful in the <xliff:g id="wifi">%2$s</xliff:g> WiFi at <xliff:g id="time">%1$s</xliff:g>.</string>
+    <string name="bluetooth_not_connect">Bluetooth not connect.</string>
+    <string name="this_wifi_no_connect">No connect.</string>
+    <string name="server_wifi_no_connect">Server wifi no connect.</string>
+    <string name="server_no_wifi_ssid">No connect</string>
+    <string name="alexa_wifi_addr">Wifi address:</string>
+    <string name="alexa_server_wifi_addr">Server Wiffi address:</string>
+    <string name="step1_text">Make sure your mobile phone and H0009 connect to the same Wifi.</string>
+    <string name="step2_text">Already connected, please login to the Amazon account.</string>
+    <string name="toast_configuration_success">configuration success.</string>
+    <string name="toast_configuration_fail">configuration fail.</string>
+    <string name="toast_wifi_ap_failed">WiFi hotspot set failed</string>
+    <string name="toast_wifi_ap_success">WiFi hotspot set successfully</string>
+    <string name="title_server_wlan_hotspot">Server WLAN hotspot</string>
+    <string name="network_name">Network name</string>
+    <string name="enter_the_ssid">Enter the SSID</string>
+    <string name="wifi_ap_security">Security</string>
+    <string name="wifi_ap_password">Password</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="password_sum">The password must have at least 8 characters.</string>
+    <string name="show_password">Show password</string>
+    <string name="set_up_server_wlan_hotspot">Set up server WLAN hotspot</string>
+</resources>

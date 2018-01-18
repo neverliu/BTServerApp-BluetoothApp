@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <View
+    android:id="@+id/first_line"
+    android:layout_width="9dp"
+    android:layout_height="1dp"
+    android:layout_centerHorizontal="true"
+    android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ring"
+        android:drawableTop="@mipmap/ring"
+        android:text="@string/ring"
+        style="@style/main_text_style_new"
+        android:layout_toLeftOf="@+id/first_line"/>
+
+    <TextView
+        android:drawableTop="@mipmap/sms"
+        android:text="@string/sms"
+        style="@style/main_text_style_new"
+        android:layout_toRightOf="@+id/first_line"/>
+
+
+
+    <TextView
+        android:id="@+id/sms"
+        android:layout_below="@id/ring"
+        android:drawableTop="@mipmap/ring"
+        android:text="@string/ring"
+        style="@style/main_text_style_new"
+        android:layout_toLeftOf="@+id/first_line"/>
+
+    <TextView
+        android:layout_below="@id/ring"
+        android:drawableTop="@mipmap/sms"
+        android:text="@string/sms"
+        style="@style/main_text_style_new"
+        android:layout_toRightOf="@+id/first_line"/>
+</RelativeLayout>

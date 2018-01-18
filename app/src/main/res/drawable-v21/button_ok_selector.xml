@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/colorlightGrayM">
+    <item>
+        <shape>
+            <!-- 中间的背景色 -->
+            <solid android:color="@color/RoyalBlue"/>
+            <!-- 设置四个角的角度 -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</ripple>

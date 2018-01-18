@@ -1,0 +1,107 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BluetoothAP</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+    <string name="main_noconnect">无连接</string>
+    <string name="main_connected_to">"已连接\n"</string>
+
+    <string name="matched">配对</string>
+    <string name="connected">已连接</string>
+    <string name="data">数据连接</string>
+    <string name="data_open">数据已经打开</string>
+    <string name="data_close">数据已经关闭</string>
+    <string name="data_no_sim">没有SIM卡</string>
+    <string name="contacts">联系人</string>
+    <string name="sms">短信</string>
+    <string name="ring">铃声</string>
+    <string name="main_ring_success">"铃声设置成功！"</string>
+    <string name="main_ring_fail">"铃声设置失敗！"</string>
+    <string name="wifi_ap">WiFi热点</string>
+    <string name="wifi_ap_open_title">"是否打开WiFi热点？"</string>
+    <string name="wifi_ap_close_title">"是否关闭Wifi热点？"</string>
+    <string name="main_wifi_ap_open_msg">"WiFi热点已打开！"</string>
+    <string name="main_wifi_ap_close_msg">"WiFi热点已关闭！"</string>
+    <string name="main_wifi_ap_fail_msg">"WiFi开关失败，请重试！"</string>
+
+    <string name="main_no_connect_device">"未连接到设置"</string>
+
+    <string name="bt_device_list">"设备列表"</string>
+
+    <string name="click_get_wifi_list">点击获取WiFi列表</string>
+    <string name="title_password">密码:</string>
+    <string name="input_wifi_password">输入WiFi密码</string>
+    <string name="button_configuration">配  置</string>
+    <string name="close_wifi">关闭WiFi</string>
+    <string name="wifi">WIFI:</string>
+    <string name="get_wifi_status">服务端WiFi</string>
+
+    <string name="fotget_device">取消配对保存</string>
+    <string name="searching_devices">搜索设备中...</string>
+    <string name="search_devices">搜索设备</string>
+    <string name="not_find_devices">没有发现设备</string>
+    <string name="unkown_device">未知设备</string>
+    <string name="bond_fail">配对失败</string>
+    <string name="foget_device_fail">取消保存失败</string>
+    <string name="request_bond_device">正在请求与%s配对</string>
+    <string name="cancel_bond_device">取消与%s配对</string>
+    <string name="success_bond_device">成功与%s配对</string>
+    <string name="available_devices">其他设备</string>
+    <string name="paired_devices">已配对设备</string>
+    <string name="get_contacts">获取联系人</string>
+    <string name="add_contact">添加联系人</string>
+    <string name="sms_send">发送</string>
+
+    <string name="battery_charging">"充电中 %d%%"</string>
+    <string name="battery_current">"%d%%"</string>
+
+    <string name="battery">电池</string>
+    <string name="dialog_add_contact">添加联系人</string>
+    <string name="input_name">输入姓名</string>
+    <string name="text_name">姓名:</string>
+    <string name="text_number">号码:</string>
+    <string name="input_number">输入号码</string>
+    <string name="menu_modify">修改</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_dialer">拨号</string>
+    <string name="menu_title">菜单</string>
+    <string name="modify_contact">修改联系人</string>
+    <string name="delete_contact">删除 %s ?</string>
+    <string name="toast_add_ok">添加成功</string>
+    <string name="toast_add_fiald">添加失败</string>
+    <string name="toast_modify_ok">修改成功</string>
+    <string name="toast_modify_fiald">修改失败</string>
+    <string name="toast_delete_ok">删除成功</string>
+    <string name="toast_delete_fiald">删除失败</string>
+    <string name="toast_notify_name_phone">请输入有效的名字与电话号码！</string>
+
+    <string name="text_wifi_1">音箱wifi正在打开，请稍后...</string>
+    <string name="text_wifi_2">音箱wifi正在关闭...</string>
+    <string name="text_wifi_3">音箱wifi已经关闭，请先打开，并将其连接同一wifi下。</string>
+    <string name="text_wifi_4">音箱wifi已经打开，请将手机wifi打开，并将其连接同一wifi下。</string>
+    <string name="text_wifi_5">wifi打开并且与手机在同一wifi下，请尝试连接alexa。</string>
+    <string name="text_wifi_6">WiFi地址不匹配，请连接同一wifi下。</string>
+    <string name="text_wifi_7">请检测蓝牙是否连接上。</string>
+    <string name="bluetooth_not_connect">蓝牙未连接。</string>
+
+    <string name="this_wifi_no_connect">本机wifi未连接。</string>
+    <string name="server_wifi_no_connect">音箱wifi未连接。</string>
+    <string name="server_no_wifi_ssid">获取不到音箱wifi。</string>
+    <string name="step1_text">请让音箱wifi跟本机wifi在同一个wifi内才能连接。</string>
+    <string name="step2_text">已经连接，请登录亚马逊账号。</string>
+    <string name="login_message_1" >您于<xliff:g id="time">%1$s</xliff:g>在<xliff:g id="wifi">%2$s</xliff:g>该wifi中登入成功。</string>
+
+    <string name="toast_configuration_success">配置成功.</string>
+    <string name="toast_configuration_fail">配置失败.</string>
+    <string name="toast_wifi_ap_failed">WiFi热点设置失败</string>
+    <string name="toast_wifi_ap_success">WiFi热点设置成功</string>
+    <string name="title_server_wlan_hotspot">服务端 WLAN hotspot</string>
+    <string name="network_name">网络名称</string>
+    <string name="enter_the_ssid">输入SSID</string>
+    <string name="wifi_ap_security">安全性</string>
+    <string name="wifi_ap_password">密码</string>
+    <string name="enter_the_password">输入密码</string>
+    <string name="password_sum">密码至少应包含8个字符。</string>
+    <string name="show_password">显示密码</string>
+    <string name="set_up_server_wlan_hotspot">设置WiFi热点</string>
+</resources>

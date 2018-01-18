@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.mega.deviceapp"
+        minSdkVersion 22
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    // Sign both debug and release with a single key so that LWA always works
+    // In practice you would have separate keys for debug and release
+    signingConfigs {
+        lwa {
+            storeFile file('Megafone.jks')
+            keyAlias 'h0009 ap'
+            keyPassword 'ZAQ!xsw2'
+            storePassword 'ZAQ!xsw2'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.lwa
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.lwa
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.apache.commons:commons-lang3:3.4'
+}
+
+String apiKeyLocation = "./src/main/assets/api_key.txt"
+String caCertLocation = "./src/main/res/raw/ca.crt"
+
+task checkForRequiredFiles << {
+    if (!file(apiKeyLocation).exists()) {
+        throw new FileNotFoundException("The API Key file does not exist. Please make sure " + apiKeyLocation + " has been created and populated with the proper values from the Security Profile you created.")
+    }
+
+    if (!file(caCertLocation).exists()) {
+        throw new FileNotFoundException("The Certificate Authority public certificate file does not exist. Please make sure " + caCertLocation + " exists and contains the public certificate created during setup.")
+    }
+}
+preBuild.dependsOn checkForRequiredFiles

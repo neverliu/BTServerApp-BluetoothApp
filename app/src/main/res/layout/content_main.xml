@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mega.deviceapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bluetooth_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2f3f9e"
+                    android:gravity="center"
+                    android:src="@drawable/btn_bluetooh" />
+
+                <TextView
+                    android:id="@+id/bluetooth_matched_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/no_matched"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/wifi_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2f3f9e"
+                    android:gravity="center"
+                    android:saveEnabled="false"
+                    android:src="@drawable/btn_wifi" />
+
+                <TextView
+                    android:id="@+id/wifi_connected_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="@string/main_noconnect"
+                    android:textColor="@android:color/white"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <View
+                android:id="@+id/first_line"
+                android:layout_width="9dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/simcard_tv"
+                style="@style/main_text_style_new"
+                android:layout_toLeftOf="@+id/first_line"
+                android:drawableTop="@mipmap/no_simcard"
+                android:text="@string/sim_card_info_text" />
+
+            <TextView
+                android:id="@+id/battery_tv"
+                style="@style/main_text_style_new"
+                android:layout_toRightOf="@+id/first_line"
+                android:drawableTop="@mipmap/ic_battery"
+                android:text="@string/battery" />
+
+
+            <TextView
+                android:id="@+id/data_tv"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/simcard_tv"
+                android:layout_toLeftOf="@+id/first_line"
+                android:drawableTop="@mipmap/data"
+                android:text="@string/data" />
+
+            <TextView
+                android:id="@+id/wifiap_btn"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/simcard_tv"
+                android:layout_toRightOf="@+id/first_line"
+                android:drawableTop="@mipmap/wifi_ap"
+                android:text="@string/wifi_ap" />
+
+            <TextView
+                android:id="@+id/contacts_btn"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/data_tv"
+                android:layout_toLeftOf="@+id/first_line"
+                android:drawableTop="@mipmap/contacts"
+                android:text="@string/contacts" />
+
+            <TextView
+                android:id="@+id/send_msg"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/data_tv"
+                android:layout_toRightOf="@+id/first_line"
+                android:drawableTop="@mipmap/sms"
+                android:text="@string/sms" />
+
+            <TextView
+                android:id="@+id/ringtone_btn"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/contacts_btn"
+                android:layout_toLeftOf="@+id/first_line"
+                android:drawableTop="@mipmap/ring"
+                android:text="@string/ring" />
+            <TextView
+                android:id="@+id/login_alexa_btn"
+                style="@style/main_text_style_new"
+                android:layout_below="@id/contacts_btn"
+                android:layout_toRightOf="@+id/first_line"
+                android:drawableTop="@mipmap/login"
+                android:text="@string/login_alexa" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
